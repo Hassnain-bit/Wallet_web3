@@ -1,0 +1,47 @@
+
+
+@font-face {
+font-family: 'Montserrat-Bold';
+src: url('../fonts/fonts-Montserrat-Bold.eot');
+src: url('../fonts/fonts-Montserrat-Boldd41d.eot') format('embedded-opentype'),
+        url('../fonts/fonts-Montserrat-Bold.woff') format('woff2'),
+        url('../fonts/fonts-Montserrat-Bold.woff') format('woff'),
+        url('../fonts/fonts-Montserrat-Bold.ttf') format('truetype'),
+        url('../fonts/fonts-Montserrat-Bold.svg') format('svg'),
+        /* url('Montserrat-Bold.otf') format('otf'); */
+}
+  
+@font-face {
+font-family: 'Poppins-Bold';
+src: url('../fonts/fonts-Poppins-Bold.eot');
+src: url('../fonts/fonts-Poppins-Boldd41d.eot') format('embedded-opentype'),
+        url('../fonts/fonts-Poppins-Bold.woff') format('woff2'),
+        url('../fonts/fonts-Poppins-Bold.woff') format('woff'),
+        url('../fonts/fonts-Poppins-Bold.ttf') format('truetype'),
+        url('../fonts/fonts-Poppins-Bold.svg') format('svg'),
+        /* url('Poppins-Bold.otf') format('otf'); */
+}
+  
+@font-face {
+font-family: 'Poppins-Medium';
+src: url('../fonts/fonts-Poppins-Medium.eot');
+src: url('../fonts/fonts-Poppins-Mediumd41d.eot') format('embedded-opentype'),
+        url('../fonts/fonts-Poppins-Medium.woff') format('woff2'),
+        url('../fonts/fonts-Poppins-Medium.woff') format('woff'),
+        url('../fonts/fonts-Poppins-Medium.ttf') format('truetype'),
+        url('../fonts/fonts-Poppins-Medium.svg') format('svg'),
+        /* url('Poppins-Medium.otf') format('otf'); */
+}
+
+@font-face {
+font-family: 'Poppins-Regular';
+src: url('../fonts/fonts-Poppins-Regular.eot');
+src: url('../fonts/fonts-Poppins-Regulard41d.eot') format('embedded-opentype'),
+        /* url('Poppins-Regular.otf') format('otf'), */
+        url('../fonts/fonts-Poppins-Regular.svg') format('svg'),
+        url('../fonts/fonts-Poppins-Regular.ttf') format('truetype'),
+        url('../fonts/fonts-Poppins-Regular.woff') format('woff'),
+        url('../fonts/fonts-Poppins-Regular.woff') format('woff2');
+}
+  
+  
