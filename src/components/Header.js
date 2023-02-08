@@ -1,5 +1,6 @@
 import React from "react";
 import header_img from '../images/img-hero-img-home-2.png';
+import { ConnectWallet } from "@thirdweb-dev/react";
 
 function Header() {
   return (
@@ -31,13 +32,15 @@ function Header() {
                   with zero Human interference.
                 </p>
                 <div class="action">
-                  <button
+                  {/* <button
                     href="wallet/index.html"
                     class="btn-primary-1 btn-hero heading-SB connectBtn"
                     id="connectBtn"
                   >
                     Connect Wallet
-                  </button>
+                  </button> */}
+                  <ConnectWallet className="btn-primary-1 btn-hero heading-SB connectBtn" accentColor="#019DEA" colorMode="dark" />
+                  
                   <a href="index.html"></a>
                   <div class="btn-hero heading-SB" id="slect-main">
                     <select

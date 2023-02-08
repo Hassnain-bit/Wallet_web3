@@ -11981,20 +11981,20 @@ p {
 }
 
 .btn-primary-1 {
-  padding: 13px 24px 13px 24px;
-  border-radius: 12px;
-  background-color: #019DEA;
-  color: #FFFFFF;
-  text-transform: capitalize;
-  font-family: 'Poppins', sans-serif;
-  border: 1px solid transparent;
-  transition: 0.2s;
+  padding: 13px 24px 13px 24px !important;
+  border-radius: 12px !important;
+  background-color: #019DEA !important;
+  color: #FFFFFF !important;
+  text-transform: capitalize !important;
+  font-family: 'Poppins', sans-serif !important;
+  border: 1px solid transparent !important;
+  transition: 0.2s !important;
 }
 
 .btn-primary-1:hover {
-  background-color: rgba(255, 255, 255, 0.05);
-  border: 1px solid #019DEA;
-  color: #FFFFFF;
+  background-color: rgba(255, 255, 255, 0.05) !important;
+  border: 1px solid #019DEA !important;
+  color: #FFFFFF !important;
 }
 
 .btn-primary-2 {
