@@ -46,7 +46,7 @@ function Header() {
                     auth={{
                       loginConfig: {
                         // The URL to redirect to on login.
-                        redirectTo: "",
+                        redirectTo: "/page2",
                         // Function to run on error.
                         onError: function (error) {},
                       },
