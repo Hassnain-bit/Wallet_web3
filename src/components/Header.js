@@ -1,5 +1,5 @@
 import React from "react";
-import header_img from '../images/img-hero-img-home-2.png';
+import header_img from "../images/img-hero-img-home-2.png";
 import { ConnectWallet } from "@thirdweb-dev/react";
 
 function Header() {
@@ -39,8 +39,29 @@ function Header() {
                   >
                     Connect Wallet
                   </button> */}
-                  <ConnectWallet className="btn-primary-1 btn-hero heading-SB connectBtn" accentColor="#019DEA" colorMode="dark" />
-                  
+                  <ConnectWallet
+                  className="btn-primary-1 btn-hero heading-SB connectBtn"
+                  accentColor="#019DEA"
+                  colorMode="dark"
+                    auth={{
+                      loginConfig: {
+                        // The URL to redirect to on login.
+                        redirectTo: "",
+                        // Function to run on error.
+                        onError: function (error) {},
+                      },
+                      // If you want users to sign in after connecting their wallet
+                      loginOptional: false,
+                      loginOptions: {
+                        // The optional nonce of the login request used to prevent replay attacks
+                        nonce: "",
+                        // The optional time after which the login payload will be invalid
+                        expirationTime: new Date(),
+                        // The optional chain ID that the login request was intended for
+                        chainId: 0,
+                      },
+                    }}
+                  />
                   <a href="index.html"></a>
                   <div class="btn-hero heading-SB" id="slect-main">
                     <select
@@ -91,11 +112,7 @@ function Header() {
               </div>
             </div>
           </div>
-          <img
-            class="hero-img"
-            src={header_img}
-            alt="img"
-          />
+          <img class="hero-img" src={header_img} alt="img" />
         </div>
       </div>
     </>
