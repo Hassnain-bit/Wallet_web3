@@ -1,9 +1,55 @@
-import React from "react";
+import React, { useState } from "react";
+import "react-responsive-modal/styles.css";
+import { Modal } from "react-responsive-modal";
 
 function Rectify() {
+  const [loading, setLoading] = useState(false);
+
+  const [open, setOpen] = useState(false);
+  // const onOpenModal = () => setOpen(true);
+  const onCloseModal = () => setOpen(false);
+
+  const [openImport, setOpenImport] = useState(true);
+
+  // const onOpenImportModal = () => setOpenImport(true);
+  const onCloseImportModal = () => setOpenImport(false);
+
+  // useEffect(() => {
+  //   setTimeout(() => setLoading(true), 1000);
+
+  //   // Fetch data here
+
+  //   setLoading(false);
+  // }, []);
+
+  function Active() {
+    setLoading(true);
+    setTimeout(() => setLoading(false), 3000);
+    setTimeout(() => setOpen(true), 3000);
+  }
   return (
-    <div>
+    <div style={{ color: "white" }}>
+      <div className="app">
+        {loading ? (
+          <Modal
+            open={openImport}
+            onClose={onCloseImportModal}
+            center
+            classNames={{
+              overlay: "customOverlay",
+              modal: "init_modal",
+            }}
+          >
+            <div className="im_inner">
+              <button>Initializing...</button>
+            </div>
+          </Modal>
+        ) : (
+          ""
+        )}
+      </div>
       <button
+        onClick={Active}
         type="button"
         class="btn btn-primary"
         data-bs-toggle="modal"
@@ -12,7 +58,14 @@ function Rectify() {
         Launch demo modal
       </button>
 
-      <div
+      <div>
+        {/* <button onClick={onOpenModal}>Open modal</button> */}
+        <Modal open={open} onClose={onCloseModal} center>
+          <h2>Simple centered modal</h2>
+        </Modal>
+      </div>
+
+      {/* <div
         class="modal fade"
         id="exampleModal"
         tabindex="-1"
@@ -47,7 +100,7 @@ function Rectify() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
