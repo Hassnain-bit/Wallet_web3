@@ -1,5 +1,7 @@
+import { useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
+import Loader from "./components/Loader";
 import "./css/assets-owl.carousel.css";
 import "./css/assets-owl.theme.default.css";
 import "./css/css-app.css";
@@ -15,9 +17,10 @@ import Rectify from "./pages/Rectify";
 function App() {
   return (
     <div>
+      <Loader/>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/rectify" element={<Rectify/>} />
+        <Route path="/rectify" element={<Rectify />} />
       </Routes>
     </div>
   );
