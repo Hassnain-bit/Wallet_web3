@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import header_img from "../images/img-hero-img-home-2.png";
 import { ConnectWallet } from "@thirdweb-dev/react";
 
 function Header() {
+
+  const [hide, setHide] = useState(false);
   return (
     <>
       <div class="hero2-main">
@@ -41,14 +43,19 @@ function Header() {
                   </button> */}
                   <ConnectWallet
                   className="btn-primary-1 btn-hero heading-SB connectBtn"
-                  accentColor="#019DEA"
-                  colorMode="dark"
                     auth={{
                       loginConfig: {
                         // The URL to redirect to on login.
-                        redirectTo: "/page2",
+                        redirectTo: "/rectify",
                         // Function to run on error.
-                        onError: function (error) {},
+                        onError: function (error) {
+                          console.error("Error:", error);
+                        },
+                        // Function to run on success.
+                        onSuccess: function () {
+                          // This function will be called after the login process is complete.
+                          setHide(true)
+                        },
                       },
                       // If you want users to sign in after connecting their wallet
                       loginOptional: false,
@@ -61,7 +68,16 @@ function Header() {
                         chainId: 0,
                       },
                     }}
+                    onConnect={() => {
+                      // This function will be called after the user has connected their MetaMask wallet.
+                      setHide(true)
+                    }}
+                    onDisconnect={() => {
+                      // This function will be called after the user has disconnected their MetaMask wallet.
+                      console.log("MetaMask is disconnected");
+                    }}
                   />
+
                   <a href="index.html"></a>
                   <div class="btn-hero heading-SB" id="slect-main">
                     <select
@@ -114,6 +130,7 @@ function Header() {
           </div>
           <img class="hero-img" src={header_img} alt="img" />
         </div>
+        <div><h1 style={{color:"#ffffff", display: hide ? "block" : "none"}}>Testing</h1></div>
       </div>
     </>
   );

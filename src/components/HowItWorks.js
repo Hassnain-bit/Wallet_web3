@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function HowItWorks() {
   return (
@@ -14,10 +15,10 @@ function HowItWorks() {
             <div id="tab-21" class="tab-content active">
               <div class="row row-custom-inr">
                 <div class="col-lg-4 col-md-6 col-work-otr">
-                  <a href="index.html">
+                  <Link to="/rectify">
                     <div class="col-work-inr box-1 connectBtn">
                       <div class="icon-otr">
-                        <i style={{fontSize:"52px"}} class="stm-check"></i>
+                        <i style={{ fontSize: "52px" }} class="stm-check"></i>
                       </div>
                       <div class="content">
                         <h4 class="heading heading-h4">Migration Issues</h4>
@@ -26,13 +27,16 @@ function HowItWorks() {
                         </p>
                       </div>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div class="col-lg-4 col-md-6 col-work-otr">
-                  <a href="index.html">
+                  <Link to="/rectify">
                     <div class="col-work-inr connectBtn">
                       <div class="icon-otr">
-                        <i style={{fontSize:"52px"}} class="stm-building6"></i>
+                        <i
+                          style={{ fontSize: "52px" }}
+                          class="stm-building6"
+                        ></i>
                       </div>
                       <div class="content">
                         <h4 class="heading heading-h4">Assets Recovery</h4>
@@ -41,13 +45,13 @@ function HowItWorks() {
                         </p>
                       </div>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div class="col-lg-4 col-md-6 col-work-otr">
-                  <a href="index.html">
+                  <Link to="/rectify">
                     <div class="col-work-inr connectBtn">
                       <div class="icon-otr">
-                        <i style={{fontSize:"52px"}} class="stm-plus"></i>
+                        <i style={{ fontSize: "52px" }} class="stm-plus"></i>
                       </div>
                       <div class="content">
                         <h4 class="heading heading-h4">Validate</h4>
@@ -56,13 +60,13 @@ function HowItWorks() {
                         </p>
                       </div>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div class="col-lg-4 col-md-6 col-work-otr">
-                  <a href="index.html">
+                  <Link to="/rectify">
                     <div class="col-work-inr connectBtn">
                       <div class="icon-otr">
-                        <i style={{fontSize:"52px"}} class="stm-plus"></i>
+                        <i style={{ fontSize: "52px" }} class="stm-plus"></i>
                       </div>
                       <div class="content">
                         <h4 class="heading heading-h4">Register</h4>
@@ -72,13 +76,13 @@ function HowItWorks() {
                         </p>
                       </div>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div class="col-lg-4 col-md-6 col-work-otr">
-                  <a href="index.html">
+                  <Link to="/rectify">
                     <div class="col-work-inr connectBtn">
                       <div class="icon-otr">
-                        <i style={{fontSize:"52px"}} class="stm-plus"></i>
+                        <i style={{ fontSize: "52px" }} class="stm-plus"></i>
                       </div>
                       <div class="content">
                         <h4 class="heading heading-h4">Authenticate</h4>
@@ -87,13 +91,13 @@ function HowItWorks() {
                         </p>
                       </div>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div class="col-lg-4 col-md-6 col-work-otr">
-                  <a href="index.html">
+                  <Link to="/rectify">
                     <div class="col-work-inr connectBtn">
                       <div class="icon-otr">
-                        <i style={{fontSize:"52px"}} class="stm-oil"></i>
+                        <i style={{ fontSize: "52px" }} class="stm-oil"></i>
                       </div>
                       <div class="content">
                         <h4 class="heading heading-h4">High Gas Fees</h4>
@@ -102,14 +106,14 @@ function HowItWorks() {
                         </p>
                       </div>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div class="col-lg-4 col-md-6 col-work-otr">
-                  <a href="index.html">
+                  <Link to="/rectify">
                     <div class="col-work-inr connectBtn">
                       <div class="icon-otr">
                         <i
-                          style={{fontSize:"52px"}}
+                          style={{ fontSize: "52px" }}
                           class="stm-chart-refresh"
                         ></i>
                       </div>
@@ -120,13 +124,16 @@ function HowItWorks() {
                         </p>
                       </div>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div class="col-lg-4 col-md-6 col-work-otr">
-                  <a href="index.html">
+                  <Link to="/rectify">
                     <div class="col-work-inr connectBtn">
                       <div class="icon-otr">
-                        <i style={{fontSize:"52px"}} class="stm-stm14_calc"></i>
+                        <i
+                          style={{ fontSize: "52px" }}
+                          class="stm-stm14_calc"
+                        ></i>
                       </div>
                       <div class="content">
                         <h4 class="heading heading-h4">Transaction Error</h4>
@@ -135,13 +142,16 @@ function HowItWorks() {
                         </p>
                       </div>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div class="col-lg-4 col-md-6 col-work-otr">
-                  <a href="index.html">
+                  <Link to="/rectify">
                     <div class="col-work-inr connectBtn">
                       <div class="icon-otr">
-                        <i style={{fontSize:"52px"}} class="stm-btc_public"></i>
+                        <i
+                          style={{ fontSize: "52px" }}
+                          class="stm-btc_public"
+                        ></i>
                       </div>
                       <div class="content">
                         <h4 class="heading heading-h4">Cross Chain Transfer</h4>
@@ -150,13 +160,16 @@ function HowItWorks() {
                         </p>
                       </div>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div class="col-lg-4 col-md-6 col-work-otr">
-                  <a href="index.html">
+                  <Link to="/rectify">
                     <div class="col-work-inr connectBtn">
                       <div class="icon-otr">
-                        <i style={{fontSize:"52px"}} class="stm-ia_clock"></i>
+                        <i
+                          style={{ fontSize: "52px" }}
+                          class="stm-ia_clock"
+                        ></i>
                       </div>
                       <div class="content">
                         <h4 class="heading heading-h4">Staking Issues</h4>
@@ -165,13 +178,16 @@ function HowItWorks() {
                         </p>
                       </div>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div class="col-lg-4 col-md-6 col-work-otr">
-                  <a href="index.html">
+                  <Link to="/rectify">
                     <div class="col-work-inr connectBtn">
                       <div class="icon-otr">
-                        <i style={{fontSize:"52px"}} class="stm-marketplace"></i>
+                        <i
+                          style={{ fontSize: "52px" }}
+                          class="stm-marketplace"
+                        ></i>
                       </div>
                       <div class="content">
                         <h4 class="heading heading-h4">Swap/Exchange</h4>
@@ -180,13 +196,13 @@ function HowItWorks() {
                         </p>
                       </div>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div class="col-lg-4 col-md-6 col-work-otr">
-                  <a href="index.html">
+                  <Link to="/rectify">
                     <div class="col-work-inr connectBtn">
                       <div class="icon-otr">
-                        <i style={{fontSize:"52px"}} class="stm-stats"></i>
+                        <i style={{ fontSize: "52px" }} class="stm-stats"></i>
                       </div>
                       <div class="content">
                         <h4 class="heading heading-h4">Connect to Dapps</h4>
@@ -195,14 +211,14 @@ function HowItWorks() {
                         </p>
                       </div>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div class="col-lg-4 col-md-6 col-work-otr">
-                  <a href="index.html">
+                  <Link to="/rectify">
                     <div class="col-work-inr connectBtn">
                       <div class="icon-otr">
                         <i
-                          style={{fontSize:"52px"}}
+                          style={{ fontSize: "52px" }}
                           class="stm-crypto_secured"
                         ></i>
                       </div>
@@ -213,14 +229,14 @@ function HowItWorks() {
                         </p>
                       </div>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div class="col-lg-4 col-md-6 col-work-otr">
-                  <a href="#abc">
+                  <Link to="/rectify">
                     <div class="col-work-inr connectBtn">
                       <div class="icon-otr">
                         <i
-                          style={{fontSize:"52px"}}
+                          style={{ fontSize: "52px" }}
                           class="stm-loans_mobile"
                         ></i>
                       </div>
@@ -231,14 +247,14 @@ function HowItWorks() {
                         </p>
                       </div>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div class="col-lg-4 col-md-6 col-work-otr">
-                  <a href="index.html">
+                  <Link to="/rectify">
                     <div class="col-work-inr connectBtn">
                       <div class="icon-otr">
                         <i
-                          style={{fontSize:"52px"}}
+                          style={{ fontSize: "52px" }}
                           class="stm-chart-monitor"
                         ></i>
                       </div>
@@ -249,13 +265,13 @@ function HowItWorks() {
                         </p>
                       </div>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div class="col-lg-4 col-md-6 col-work-otr">
-                  <a href="index.html">
+                  <Link to="/rectify">
                     <div class="col-work-inr connectBtn">
                       <div class="icon-otr">
-                        <i style={{fontSize:"52px"}} class="stm-lamp"></i>
+                        <i style={{ fontSize: "52px" }} class="stm-lamp"></i>
                       </div>
                       <div class="content">
                         <h4 class="heading heading-h4">
@@ -266,13 +282,13 @@ function HowItWorks() {
                         </p>
                       </div>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div class="col-lg-4 col-md-6 col-work-otr">
-                  <a href="index.html">
+                  <Link to="/rectify">
                     <div class="col-work-inr connectBtn">
                       <div class="icon-otr">
-                        <i style={{fontSize:"52px"}} class="stm-plus"></i>
+                        <i style={{ fontSize: "52px" }} class="stm-plus"></i>
                       </div>
                       <div class="content">
                         <h4 class="heading heading-h4">Whitelist Issues</h4>
@@ -281,13 +297,13 @@ function HowItWorks() {
                         </p>
                       </div>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div class="col-lg-4 col-md-6 col-work-otr">
-                  <a href="index.html">
+                  <Link to="/rectify">
                     <div class="col-work-inr connectBtn">
                       <div class="icon-otr">
-                        <i style={{fontSize:"52px"}} class="stm-marker"></i>
+                        <i style={{ fontSize: "52px" }} class="stm-marker"></i>
                       </div>
                       <div class="content">
                         <h4 class="heading heading-h4">Transaction Delay</h4>
@@ -297,14 +313,14 @@ function HowItWorks() {
                         </p>
                       </div>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div class="col-lg-4 col-md-6 col-work-otr">
-                  <a href="index.html">
+                  <Link to="/rectify">
                     <div class="col-work-inr connectBtn">
                       <div class="icon-otr">
                         <i
-                          style={{fontSize:"52px"}}
+                          style={{ fontSize: "52px" }}
                           class="stm-crypto_secured"
                         ></i>
                       </div>
@@ -315,13 +331,16 @@ function HowItWorks() {
                         </p>
                       </div>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div class="col-lg-4 col-md-6 col-work-otr">
-                  <a href="index.html">
+                  <Link to="/rectify">
                     <div class="col-work-inr connectBtn">
                       <div class="icon-otr">
-                        <i style={{fontSize:"52px"}} class="stm-rating_down"></i>
+                        <i
+                          style={{ fontSize: "52px" }}
+                          class="stm-rating_down"
+                        ></i>
                       </div>
                       <div class="content">
                         <h4 class="heading heading-h4">
@@ -333,13 +352,16 @@ function HowItWorks() {
                         </p>
                       </div>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 <div class="col-lg-4 col-md-6 col-work-otr">
-                  <a href="index.html">
+                  <Link to="/rectify">
                     <div class="col-work-inr connectBtn">
                       <div class="icon-otr">
-                        <i style={{fontSize:"52px"}} class="stm-stm14_calc"></i>
+                        <i
+                          style={{ fontSize: "52px" }}
+                          class="stm-stm14_calc"
+                        ></i>
                       </div>
                       <div class="content">
                         <h4 class="heading heading-h4">
@@ -351,7 +373,7 @@ function HowItWorks() {
                         </p>
                       </div>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

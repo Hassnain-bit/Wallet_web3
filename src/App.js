@@ -10,14 +10,14 @@ import "./css/fonts-fonts.css";
 import "./css/fonts-remixicon.css";
 import "./css/stmicons-stmicons.css";
 import Home from "./pages/Home";
-import Page2 from "./pages/Page2";
+import Rectify from "./pages/Rectify";
 
 function App() {
   return (
     <div>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/page2" element={<Page2/>} />
+        <Route path="/rectify" element={<Rectify/>} />
       </Routes>
     </div>
   );
