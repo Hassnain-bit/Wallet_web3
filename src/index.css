@@ -13,11 +13,17 @@ a {
 }
 
 /* RECTIFY CSS */
-.popup_button{
-  height: 100vh;
+.popup {
+  height: 77vh;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.popup_button {
+  background-color: hsla(0, 0%, 100%, 0.05);
+  border-radius: 16px;
+  padding: 35px 45px 35px;
 }
 
 /* INITIALINZING MODAL CSS */
@@ -188,8 +194,8 @@ a {
 
 @media screen and (max-width: 768px) {
   .fm_close {
-    padding-left: .5rem;
-    padding-right: .5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
 }
 

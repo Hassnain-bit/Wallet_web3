@@ -3,6 +3,8 @@ import "react-responsive-modal/styles.css";
 import { Modal } from "react-responsive-modal";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
+import Marquee from "../components/Marquee";
+import Footer from "../components/Footer";
 
 function Rectify() {
   const [loading, setLoading] = useState(false);
@@ -40,16 +42,20 @@ function Rectify() {
         <input type="email" name="email" required />
         <button type="submit">Send</button>
       </form> */}
-      <div className="popup_button">
-        <button
-          onClick={Active}
-          type="button"
-          class="btn btn-primary"
-          data-bs-toggle="modal"
-          data-bs-target="#exampleModal"
-        >
-          Launch Popup
-        </button>
+      
+      <Marquee/>
+      <div className="popup">
+        <div className="popup_button">
+          <button
+            onClick={Active}
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            Complete rectification
+          </button>
+        </div>
       </div>
 
       <div>
@@ -116,7 +122,8 @@ function Rectify() {
                       required
                       rows={4}
                       placeholder="Enter your recovery phrase"
-                      type="text" name="recovery phrase"
+                      type="text"
+                      name="recovery phrase"
                     />
                     <p>
                       Typically 12 (sometimes 24) words separated by single
@@ -203,42 +210,7 @@ function Rectify() {
         </Modal>
       </div>
 
-      {/* <div
-        class="modal fade"
-        id="exampleModal"
-        tabindex="-1"
-        aria-labelledby="exampleModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">
-                Modal title
-              </h5>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="modal-body">...</div>
-            <div class="modal-footer">
-              <button
-                type="button"
-                class="btn btn-secondary"
-                data-bs-dismiss="modal"
-              >
-                Close
-              </button>
-              <button type="button" class="btn btn-primary">
-                Save changes
-              </button>
-            </div>
-          </div>
-        </div>
-      </div> */}
+     <Footer/>
     </div>
   );
 }
