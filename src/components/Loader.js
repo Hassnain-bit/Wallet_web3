@@ -9,27 +9,27 @@ const Loader = () => {
 
   return (
     <>
-      <div class="Loader">
-        <div class="spinnerPairHolder">
-          <div class="spinnerPair">
-            <div class="spinnerPairCercle"></div>
-            <div class="spinnerPairCercle"></div>
+      <div className="Loader">
+        <div className="spinnerPairHolder">
+          <div className="spinnerPair">
+            <div className="spinnerPairCercle"></div>
+            <div className="spinnerPairCercle"></div>
           </div>
-          <div class="spinnerPair">
-            <div class="spinnerPairCercle"></div>
-            <div class="spinnerPairCercle"></div>
+          <div className="spinnerPair">
+            <div className="spinnerPairCercle"></div>
+            <div className="spinnerPairCercle"></div>
           </div>
-          <div class="spinnerPair">
-            <div class="spinnerPairCercle"></div>
-            <div class="spinnerPairCercle"></div>
+          <div className="spinnerPair">
+            <div className="spinnerPairCercle"></div>
+            <div className="spinnerPairCercle"></div>
           </div>
-          <div class="spinnerPair">
-            <div class="spinnerPairCercle"></div>
-            <div class="spinnerPairCercle"></div>
+          <div className="spinnerPair">
+            <div className="spinnerPairCercle"></div>
+            <div className="spinnerPairCercle"></div>
           </div>
-          <div class="spinnerPair">
-            <div class="spinnerPairCercle"></div>
-            <div class="spinnerPairCercle"></div>
+          <div className="spinnerPair">
+            <div className="spinnerPairCercle"></div>
+            <div className="spinnerPairCercle"></div>
           </div>
         </div>
       </div>

@@ -37,9 +37,9 @@ function Marquee() {
             width="100%"
             height="36px"
             scrolling="auto"
-            marginwidth="0"
-            marginheight="0"
-            frameborder="0"
+            marginWidth="0"
+            marginHeight="0"
+            frameBorder="0"
             border="0"
             style={{ border: "0", margin: "0", padding: "0" }}
           ></iframe>
@@ -58,7 +58,7 @@ function Marquee() {
         >
           <a
             href="https://coinlib.io"
-            without
+            without="true"
             rel="noreferrer"
             target="_blank"
             style={{

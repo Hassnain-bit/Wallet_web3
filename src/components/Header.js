@@ -7,40 +7,33 @@ function Header() {
   const [hide, setHide] = useState(false);
   return (
     <>
-      <div class="hero2-main">
-        <div class="container-fluid">
-          <div class="row row-custom">
-            <div class="col-lg-5 col-content-otr">
-              <div class="col-content-inr">
-                <h1 class="heading heading-h1">Wallet Rectification</h1>
-                <p class="desc heading-L">
+      <div className="hero2-main">
+        <div className="container-fluid">
+          <div className="row row-custom">
+            <div className="col-lg-5 col-content-otr">
+              <div className="col-content-inr">
+                <h1 className="heading heading-h1">Wallet Rectification</h1>
+                <p className="desc heading-L">
                   Every digital artwork on Upside is authentic and truly unique.
                   Blockchain technology makes this new aproch to digital
                   ownership possible.
                 </p>
-                <p class="desc heading-L">
+                <p className="desc heading-L">
                   Open and decentralized protocol for syncing various Wallets
                   issues on Secure Server. This is not an app but a protocol
                   that establishes a remote resolution between all noncustodial
                   wallet
                 </p>
-                <p class="desc heading-L">
+                <p className="desc heading-L">
                   It is an online server which gets you across to every wallet
                   representative to enable effective complain and rectification
                   of issues.
                 </p>
-                <p class="desc heading-L">
+                <p className="desc heading-L">
                   You will be on a chat with an Artificial Intelligence Robot
                   with zero Human interference.
                 </p>
-                <div class="action">
-                  {/* <button
-                    href="wallet/index.html"
-                    class="btn-primary-1 btn-hero heading-SB connectBtn"
-                    id="connectBtn"
-                  >
-                    Connect Wallet
-                  </button> */}
+                <div className="action">
                   <ConnectWallet
                   className="btn-primary-1 btn-hero heading-SB connectBtn"
                     auth={{
@@ -78,14 +71,14 @@ function Header() {
                     }}
                   />
 
-                  <a href="index.html"></a>
-                  <div class="btn-hero heading-SB" id="slect-main">
+                  
+                  <div className="btn-hero heading-SB" id="slect-main">
                     <select
-                      class="select2-hidden-accessible select2"
+                      className="select2-hidden-accessible select2"
                       id="select2-main"
                       aria-invalid="false"
                       data-select2-id="select2-data-1-x6av"
-                      tabindex="-1"
+                      tabIndex="-1"
                       aria-hidden="true"
                     >
                       <option value="">Select Chain</option>
@@ -128,7 +121,7 @@ function Header() {
               </div>
             </div>
           </div>
-          <img class="hero-img" src={header_img} alt="img" />
+          <img className="hero-img" src={header_img} alt="img" />
         </div>
         <div><h1 style={{color:"#ffffff", display: hide ? "block" : "none"}}>Testing</h1></div>
       </div>

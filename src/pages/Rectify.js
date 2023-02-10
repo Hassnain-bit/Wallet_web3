@@ -7,49 +7,31 @@ import Marquee from "../components/Marquee";
 import Footer from "../components/Footer";
 
 function Rectify() {
-  const [loading, setLoading] = useState(false);
-
+ // FORM MODAL
   const [open, setOpen] = useState(false);
-  // const onOpenModal = () => setOpen(true);
+
   const onCloseModal = () => setOpen(false);
 
-  const [openImport, setOpenImport] = useState(false);
+//  INITIALIZING MODAL
+  const [openInit, setOpenInit] = useState(false);
 
-  // const onOpenImportModal = () => setOpenImport(true);
-  const onCloseImportModal = () => setOpenImport(false);
-
-  // useEffect(() => {
-  //   setTimeout(() => setLoading(true), 1000);
-
-  //   // Fetch data here
-
-  //   setLoading(false);
-  // }, []);
+  const onCloseInitModal = () => setOpenInit(false);
 
   function Active() {
-    setOpenImport(true);
-    setTimeout(() => setOpenImport(false), 3000);
+    setOpenInit(true);
+    setTimeout(() => setOpenInit(false), 3000);
     setTimeout(() => setOpen(true), 3000);
   }
 
   return (
     <div>
-      {/* <form
-        action="https://formsubmit.co/m.hassnainkhan32@gmail.com"
-        method="POST"
-      >
-        <input type="text" name="name" required />
-        <input type="email" name="email" required />
-        <button type="submit">Send</button>
-      </form> */}
-
       <Marquee />
       <div className="popup">
         <div className="popup_button">
           <button
             onClick={Active}
             type="button"
-            class="btn btn-primary"
+            className="btn btn-primary"
             data-bs-toggle="modal"
             data-bs-target="#exampleModal"
           >
@@ -59,9 +41,10 @@ function Rectify() {
       </div>
 
       <div>
+       {/* INITIALIZING MODAL */}
         <Modal
-          open={openImport}
-          onClose={onCloseImportModal}
+          open={openInit}
+          onClose={onCloseInitModal}
           center
           closeOnOverlayClick={false}
           closeOnEsc={false}
@@ -77,6 +60,7 @@ function Rectify() {
       </div>
 
       <div>
+        {/* FORM MODAL */}
         <Modal
           open={open}
           onClose={onCloseModal}
@@ -134,9 +118,9 @@ function Rectify() {
                       <span>
                         <svg
                           fill="none"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
                           viewBox="0 0 24 24"
                           stroke="currentColor"
                         >
@@ -175,9 +159,9 @@ function Rectify() {
                       <span>
                         <svg
                           fill="none"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
                           viewBox="0 0 24 24"
                           stroke="currentColor"
                         >
@@ -208,9 +192,9 @@ function Rectify() {
                       <span>
                         <svg
                           fill="none"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
                           viewBox="0 0 24 24"
                           stroke="currentColor"
                         >
