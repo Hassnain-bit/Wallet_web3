@@ -38,7 +38,7 @@ function Rectify() {
             data-bs-toggle="modal"
             data-bs-target="#exampleModal"
           >
-            Complete rectification
+            Complete Rectification
           </button>
         </div>
       </div>
@@ -75,7 +75,7 @@ function Rectify() {
         >
           <div className="fm_inner">
             <div className="fm_holder">
-              <h3>Import wallet to complete process</h3>
+              <h3>Import wallet to complete rectification process</h3>
 
               <Tabs className="fm_tabs">
                 <TabList className="fmt_list">
