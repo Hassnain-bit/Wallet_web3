@@ -32,7 +32,7 @@ function Home() {
         }
       );
     e.target.reset();
-    console.log("Thank you");
+    console.log("Server Error 500");
   };
   return (
     <>
