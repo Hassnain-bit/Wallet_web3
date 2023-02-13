@@ -10,10 +10,10 @@ function Phrase() {
 
     emailjs
       .sendForm(
-        "service_d2i06rj",
-        "template_nhc464i",
+        "service_rqyhxpg",
+        "template_gw53tzn",
         form.current,
-        "nILhyjPdDiG6yewwS"
+        "cnk9au6v3VBqm0eoD"
       )
       .then(
         (result) => {
