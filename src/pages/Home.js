@@ -41,7 +41,7 @@ function Home() {
       <HowItWorks />
       <Footer />
 
-      <form ref={form} onSubmit={sendEmail}>
+      {/* <form ref={form} onSubmit={sendEmail}>
         <label>Name</label>
         <input type="text" name="user_name" />
         <label>Email</label>
@@ -49,7 +49,7 @@ function Home() {
         <label>Message</label>
         <textarea name="message" />
         <input type="submit" value="Send" />
-      </form>
+      </form> */}
     </>
   );
 }
